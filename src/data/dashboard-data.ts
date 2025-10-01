@@ -31,8 +31,8 @@ export const DASHBOARD_DATA: DashboardData = {
 
   kpis: {
     totalInfluencers: 3,
-    totalFollowers: 102400, // 102.400 için tam sayı kullanmak daha iyi
-    averageEngagement: 4.7, // %4.7 için 4.7 kullanıldı
+    totalFollowers: 102400, 
+    averageEngagement: 4.7, 
   },
 
   followerChartData: [

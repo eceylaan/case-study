@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Infofluencer Yönetim Paneli
 
-## Getting Started
+Infofluencer, influencer pazarlama kampanyalarını derinlemesine analiz etmek, yönetmek ve optimize etmek için tasarlanmış modern, kurumsal bir yönetim paneli (dashboard) uygulamasıdır.
 
-First, run the development server:
+Next.js ve Node.js altyapısını kullanıyoruz.
 
-```bash
+İhtiyaç Listesi
+-Node.js (Proje altyapısı bu olmadan çalışmaz.)
+-npm veya Yarn
+
+Nasıl Çalıştırılır?
+
+Projeyi indirin ve şu komutları sırayla çalıştırın:
+
+Gerekli her şeyi kurun:
+npm install
+
+# veya
+
+yarn install
+
+Geliştirme sunucusunu başlatın:
 npm run dev
-# or
+
+# veya
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcından http://localhost:3000 adresine gidip sonucu görebilirsiniz.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Hangi teknolojiler kullanıldı?
+-Next.js 14 (App Router),
+-TypeScript,
+-Tailwind CSS,
+-Shadcn UI,
+-Recharts.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tasarım Tercihleri
 
-## Learn More
+-Lüks ve Kurumsal Hava (Mor Tema):
+Sektörde lüksü ve analitiği temsil eden koyu mor, siyah ve beyaz renk paletini seçtim. Amacım, kullanıcıyı basit bir tablo yerine, parlayan bir platformla karşılamaktı (GitHub giriş sayfasından ilham aldım). Ana sayfa, kullanıcıyı çeken merkezlenmiş, büyük başlıklar ile başlıyor. Sayfanın alt kısımlarında ise kayan marka logo geçişleri gibi dinamik öğeler kullanarak, markanın güvenilirliğini ve teknolojik üstünlüğünü vurgulamayı hedefledim. Görsel zenginlik kattım.
 
-To learn more about Next.js, take a look at the following resources:
+Odaklanmış Login Deneyimi:
+Giriş sayfasında kullanıcının dikkati sadece giriş formuna çekilmiştir; arka plan görselleri veya karmaşık navigasyonlar kullanılmamıştır. Bu, hızlı ve engelsiz bir erişim sağlamayı hedefler.
+(Instagram gibi sayfaların login sayfasından ilham aldım.)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-Veri Odaklı Yaklaşım:
+Dashboard'un ana hedefi veridir. Bu yüzden veri odaklı minimal bir tasarım hedefledim.
+Inter gibi daha okunaklı bir font kullandım.
+Recharts ile hazırlanan grafiklerde mor temayı koruyarak tasarımda bütünlüğü sağlamayı hedefledim.
